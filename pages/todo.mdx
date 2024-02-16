@@ -6,7 +6,7 @@
 
 ## Component (example)
 
-import { useState } from 'react'
+import { useState } from "react";
 
 {/* Import CSS modules */}
 import styles from '../components/counters.module.css'
@@ -15,15 +15,17 @@ export const Counter = () => {
   const [count, setCount] = useState(0);
   return (
     <div>
-      <button onClick={() => setCount(count + 1)} className={styles.counter}>Clicked {count} times</button>
+      <button onClick={() => setCount(count + 1)} className={styles.counter}>
+        Clicked {count} times
+      </button>
     </div>
   );
 };
 
-<Counter/>
+<Counter />
 
 ## External Component (example)
 
-import Counters from '../components/counters'
+import Counters from "../components/counters";
 
 <Counters />
