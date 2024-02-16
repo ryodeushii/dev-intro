@@ -1,8 +1,8 @@
 # TODO
 
-- [ ] fill about page
-- [ ] collect "requests"/"topics" for the most crucial topics
-- [ ] arrange some contact pointn (email, bot in messengere, etc)
+-   [ ] fill about page
+-   [ ] collect "requests"/"topics" for the most crucial topics
+-   [ ] arrange some contact pointn (email, bot in messengere, etc)
 
 ## Component (example)
 
@@ -12,14 +12,17 @@ import { useState } from "react";
 import styles from '../components/counters.module.css'
 
 export const Counter = () => {
-  const [count, setCount] = useState(0);
-  return (
-    <div>
-      <button onClick={() => setCount(count + 1)} className={styles.counter}>
-        Clicked {count} times
-      </button>
-    </div>
-  );
+    const [count, setCount] = useState(0);
+    return (
+        <div>
+            <button
+                onClick={() => setCount(count + 1)}
+                className={styles.counter}
+            >
+                Clicked {count} times
+            </button>
+        </div>
+    );
 };
 
 <Counter />
